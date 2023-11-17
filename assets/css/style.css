@@ -2,4 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid black;
 }
+
+header{
+    height: 700px;
+    background-color: #3161e0;
+}
+
+/* contenitore logo menu e accedi */
+.container-flex{
+    display: flex;
+    gap: 15%;
+    padding: 30px 70px;
+    
+}
+
+.container-flex section,nav{
+    background-color: lightslategray;
+    
+}
+
+.container-flex section{
+    height: 40px;
+    flex-basis: 10%;
+}
+
+.container-flex nav{
+    height: 40px;
+    flex-grow: 3;
+}
+
+
+/* contenitore primo articolo header */
+header div:last-child{
+    display: flex;
+    justify-content: center;
+    margin-block: 4%;
+
+}
+
+div article{
+    flex-basis: 50%;
+    background-color: lightslategray;
+    min-height: 400px;   
+}
+
+
+
