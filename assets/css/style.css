@@ -10,17 +10,24 @@ header{
     background-color: #3161e0;
 }
 
+:root{
+    --back-color: lightslategray;
+}
+
+
+
 /* contenitore logo menu e accedi */
 .container-flex{
     display: flex;
     gap: 15%;
     padding: 30px 70px;
-
 }
 
 .container-flex section,nav{
-    background-color: lightslategray;
+    background-color: var(--back-color)
 }
+
+
 
 /* logo e button accedi */
 .container-flex section{
@@ -30,7 +37,11 @@ header{
     justify-content: center;
 }
 
-.container-flex section img,button{
+.container-flex section img{
+    flex-basis: 80%;
+}
+
+.container-flex section button{
     flex-basis: 80%;
 }
 
@@ -42,7 +53,6 @@ header{
     flex-grow: 3;
     display: flex;
     justify-content: space-between;
-
 }
 
 .container-flex nav span{
@@ -60,16 +70,12 @@ header div:last-child{
 
 }
 
-
-
 div article{
     flex-basis: 50%;
     background-color: rgb(207, 141, 42);
     min-height: 400px;
     display:flex;
-    flex-direction: column;
-
-    
+    flex-direction: column;    
 }
 
 article h1{
@@ -86,5 +92,238 @@ article div{
     column-gap: 50px;    
 }
 
+article div button{
+    flex-basis: 80%;
+}
 
 
+
+/* main */
+main figure{
+    height: 700px; 
+}
+
+
+
+/* prima figure  */
+.prima-figure{
+    background-color: #f5c365;
+}
+
+.prima-figure section{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.prima-figure section img{
+    flex-basis: 30%;
+    height: 60%;
+    background-color: var(--back-color);
+}
+
+.prima-figure section div{
+    flex-basis: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 200px;
+    padding-block: 100px;
+}
+
+.prima-figure section div h2{
+    background-color: var(--back-color);
+    height: 50%;
+}
+
+.prima-figure section div p{
+    background-color: var(--back-color);
+    height: 50%;
+}
+
+
+
+/* seconda figure */
+.seconda-figure{
+    background-color: #fd7231;
+}
+
+.seconda-figure section{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.seconda-figure section img{
+    flex-basis: 30%;
+    height: 60%;
+    background-color: var(--back-color);
+}
+
+.seconda-figure section div{
+    flex-basis: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 200px;
+    padding-block: 100px;
+}
+
+.seconda-figure section div h2{
+    background-color: var(--back-color);
+    height: 50%;
+}
+
+.seconda-figure section div p{
+    background-color: var(--back-color);
+    height: 50%;
+}
+
+
+
+/* terza figure */
+.terza-figure{
+    background-color: rgb(126, 41, 38);
+}
+
+.terza-figure section{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.terza-figure section img{
+    flex-basis: 30%;
+    height: 60%;
+    background-color: var(--back-color);
+}
+
+.terza-figure section div{
+    flex-basis: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 200px;
+    padding-block: 100px;
+}
+
+.terza-figure section div h2{
+    background-color: var(--back-color);
+    height: 50%;
+}
+
+.terza-figure section div p{
+    background-color: var(--back-color);
+    height: 50%;
+}
+
+
+
+/* last figure */
+.last-figure{
+    background-color: rgb(163, 36, 125);
+    height: 900px;
+}
+
+.last-figure section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.last-figure div{
+    flex-basis: 40%;
+    background-color: var(--back-color);
+    width: 60%;
+}
+
+.last-figure section h2{
+    flex-basis: 5%;
+    background-color: var(--back-color);
+    width: 60%;
+}
+
+.last-figure section p{
+    flex-basis: 10%;
+    background-color: var(--back-color);
+    width: 60%;
+}
+
+.last-figure section span{
+    flex-basis: 5%;
+    width: 30%;
+    background-color: var(--back-color);
+}
+
+.last-figure section button{
+    flex-basis: 5%;
+    width: 10%;
+}
+
+
+
+/* footer */
+footer{
+    background-color: #3161e0;
+    height: 700px;
+    width: 60%;
+    margin: auto;
+
+    
+}
+
+footer div:first-child{
+   display: flex;
+   height: 80%;
+   justify-content: space-evenly;
+   padding-top: 5%;
+   gap: 20px;
+
+}  
+
+footer div ul{
+    list-style-type: none;
+
+    flex-grow: 1;
+}
+
+footer div ul:first-child{
+    flex-grow: 2;   
+}
+
+footer div ul li{
+    height: 35px;
+    background-color: var(--back-color);
+}
+
+
+/* hr e due elementi finali */
+footer hr{
+    border: 1px solid lime;
+    margin-bottom: 20px;
+}
+
+footer div:last-child{
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div img{
+    height: 25%;
+    flex-basis: 20%;
+    background-color: var(--back-color);
+}
+
+footer div button{
+    height: 25%;
+    flex-basis: 20%;
+}
+
+/* completato esercizio */
