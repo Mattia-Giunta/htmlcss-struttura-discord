@@ -15,23 +15,41 @@ header{
     display: flex;
     gap: 15%;
     padding: 30px 70px;
-    
+
 }
 
 .container-flex section,nav{
     background-color: lightslategray;
-    
 }
 
+/* logo e button accedi */
 .container-flex section{
     height: 40px;
     flex-basis: 10%;
+    display: flex;
+    justify-content: center;
 }
 
+.container-flex section img,button{
+    flex-basis: 80%;
+}
+
+
+
+/* barra nav */
 .container-flex nav{
     height: 40px;
     flex-grow: 3;
+    display: flex;
+    justify-content: space-between;
+
 }
+
+.container-flex nav span{
+    flex-basis: 10%;
+}
+
+
 
 
 /* contenitore primo articolo header */
@@ -42,10 +60,30 @@ header div:last-child{
 
 }
 
+
+
 div article{
     flex-basis: 50%;
-    background-color: lightslategray;
-    min-height: 400px;   
+    background-color: rgb(207, 141, 42);
+    min-height: 400px;
+    display:flex;
+    flex-direction: column;
+
+    
+}
+
+article h1{
+    height: 25%;
+}
+
+article p{
+    height: 50%;
+}
+
+article div{
+    height: 15%;
+    display: flex;
+    column-gap: 50px;    
 }
 
 
